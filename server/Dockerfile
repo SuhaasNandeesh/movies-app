@@ -12,7 +12,6 @@ RUN npm install
 #Copy app source code
 COPY . .
 
-#Expose 5000
-EXPOSE 5000
+EXPOSE 3000 27017
 
 CMD ["npm", "run", "dev"]
