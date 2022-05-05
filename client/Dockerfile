@@ -1,7 +1,6 @@
 #Docker for React client
 #Build react client
-FROM node:18-alpine3.14
-
+FROM node:16.13.0
 #Working directory
 WORKDIR "/app"
 
