@@ -2,8 +2,8 @@
 FROM node:10.16-alpine
 
 #Create app directory
-RUN mkdir -p /src/app
-WORKDIR /src/app
+RUN mkdir -p /app
+WORKDIR /app
 
 #Install dependencies
 COPY package*.json ./

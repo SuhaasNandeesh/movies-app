@@ -3,7 +3,7 @@
 FROM node:10.16-alpine
 
 #Working directory
-WORKDIR /src/app
+WORKDIR /app
 
 COPY package*.json ./
 
