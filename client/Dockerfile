@@ -1,17 +1,17 @@
 #Docker for React client
 #Build react client
-FROM node:10.16-alpine
+FROM node:18-alpine3.14
 
 #Working directory
-WORKDIR /app
+WORKDIR "/app"
 
-COPY package*.json ./
+COPY ./package*.json ./
 
-RUN npm install --silent
+RUN npm install
 
 #Copy local files to app folder
 COPY . .
 
 EXPOSE 3000
 
-CMD ["npm","start"]
+CMD ["npm", "run", "start"]

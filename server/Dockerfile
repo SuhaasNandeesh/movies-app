@@ -1,14 +1,13 @@
 #Dockerfile for Node Express Backend
-FROM node:10.16-alpine
+FROM node:18-alpine3.14
 
-#Create app directory
-RUN mkdir -p /app
-WORKDIR /app
+#Working directory
+WORKDIR "/app"
 
 #Install dependencies
-COPY package*.json ./
+COPY ./package*.json ./
 
-RUN npm install --silent
+RUN npm install
 
 #Copy app source code
 COPY . .
@@ -16,4 +15,4 @@ COPY . .
 #Expose 5000
 EXPOSE 5000
 
-CMD ["npm","start"]
+CMD ["npm", "run", "dev"]
