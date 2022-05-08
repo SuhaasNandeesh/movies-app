@@ -42,7 +42,7 @@ services:
     environment:
       ME_CONFIG_MONGODB_ADMINUSERNAME: root
       ME_CONFIG_MONGODB_ADMINPASSWORD: example
-      ME_CONFIG_MONGODB_URL: mongodb://root:example@75.101.186.190:27017:27017/cinema
+      ME_CONFIG_MONGODB_URL: mongodb://root:example@75.101.186.190:27017/cinema
 
   client:
     build:
