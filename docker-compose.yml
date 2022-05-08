@@ -26,9 +26,9 @@ services:
     volumes:
       - data-volume:/db
     ports:
-      - "27017:27017"
+      - "5000:5000"
     networks:
-      - app-network
+      - app-networks
   client:
     build:
       context: ./client
