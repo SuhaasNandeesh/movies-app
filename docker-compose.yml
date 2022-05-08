@@ -44,7 +44,7 @@ services:
       ME_CONFIG_MONGODB_ENABLE_ADMIN: true
       ME_CONFIG_MONGODB_ADMINUSERNAME: suhaasnandeesh
       ME_CONFIG_MONGODB_ADMINPASSWORD: suhaasnandeesh
-      ME_CONFIG_MONGODB_URL: mongo://suhaasnandeesh:suhaasnandeesh@mongo:27017/
+      ME_CONFIG_MONGODB_URL: suhaasnandeesh:suhaasnandeesh@mongo:27017/
     depends_on:
       - mongo
 
