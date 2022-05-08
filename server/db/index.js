@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 mongoose
-    .connect('mongodb://23.22.111.212:27017/cinema', { useNewUrlParser: true })
+    .connect('mongodb://75.101.186.190:5000/cinema', { useNewUrlParser: true })
     .catch(e => {
         console.error('Connection error', e.message)
     })
